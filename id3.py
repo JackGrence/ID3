@@ -4,6 +4,9 @@ import sys
 from pptree import *
 
 
+__version__ = '1.0'
+
+
 def main():
     build_id3()
 
@@ -105,7 +108,7 @@ def get_min_entropy(table):
         if gain < min_entropy:
             min_entropy = gain
             min_entropy_k = col_k
-    
+
     return min_entropy_k
 
 
